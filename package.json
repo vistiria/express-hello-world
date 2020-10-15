@@ -1,10 +1,19 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello world application",
   "main": "index.js",
+  "private": true,
+  "engines": {
+    "node" : "14.x"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/webkrak/headless-test.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wpe-build": "echo \"Do nothing!\""
   },
   "keywords": [],
   "author": "Konrad Glowacki <konrad.glowacki@wpengine.com> (wpengine.com)",
