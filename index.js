@@ -32,6 +32,6 @@ server.get('/code-challenge', async (req, res) => {
   }
 });
 
-server.listen(port, () => {
+server.listen(4000, () => {
   console.log(`Server listening at http://hdhanbo0rbquqrycpaphd.js.wpenginepoweredstaging.com (port: ${port})`);
 });
