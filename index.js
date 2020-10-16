@@ -1,12 +1,13 @@
 const express = require('express');
 const server = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 4000;
 
 const fs = require('fs');
 const path = require('path');
 const merge = require('./code-challenge/merge');
 
 server.get('/', (req, res) => {
+  console.log(process.env);
   res.send('Hello World!');
 });
 
