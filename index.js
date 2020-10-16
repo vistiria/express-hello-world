@@ -19,12 +19,13 @@ server.get('/code-challenge', async (req, res) => {
       inputFile: path.resolve(process.cwd(), './code-challenge/input.csv'),
     });
 
-    res.send(fs.readFileSync(outputFile));
+    const fileContent = fs.readFileSync(outputFile).toString();
+    res.send(fileContent);
   } catch (err) {
     res.status(500).send(`Error: ${err}`);
   }
 });
 
 server.listen(port, () => {
-  console.log('Server listening at http://hdhanbo0rbquqrycpaphd.js.wpenginepoweredstaging.com');
+  console.log(`Server listening at http://hdhanbo0rbquqrycpaphd.js.wpenginepoweredstaging.com (port: ${port})`);
 });
