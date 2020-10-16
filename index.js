@@ -7,8 +7,13 @@ const path = require('path');
 const merge = require('./code-challenge/merge');
 
 server.get('/', (req, res) => {
-  console.log(process.env);
+  // This breaks logs via cli
+  // console.log(process.env);
   res.send('Hello World!');
+});
+
+server.get('/envs', (req, res) => {
+  res.send(process.env);
 });
 
 server.get('/code-challenge', async (req, res) => {
