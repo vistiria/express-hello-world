@@ -7,7 +7,7 @@ const path = require('path');
 const merge = require('./code-challenge/merge');
 
 server.get('/', (req, res) => {
-  res.send(`Hello Big Bigg World on port: ${port}`);
+  res.send(`Hello Big Big World on port: ${port}`);
 });
 
 server.get('/envs', (req, res) => {
